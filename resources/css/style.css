@@ -5,7 +5,6 @@ html {
 body {
   font-family: "Helvetica", sans-serif;
   line-height: 1.4em;
-  margin: 0px;
 }
 
 .company {
@@ -13,7 +12,7 @@ body {
   color: white;
 }
 
-.contaianer {
+.container {
   max-width: 960px;
   margin: 0px auto;
 }
@@ -21,7 +20,7 @@ body {
 .company .container {
   display: flex;
   align-items: center;
-  padding: 12px 0px 12px 0.5em;
+  padding: .66rem 0 .66rem 0.5rem;
 }
 
 .company img {
@@ -53,8 +52,7 @@ body {
   width: 20rem;
   position: relative;
   top: 9rem;
-  left: 9rem;
-  padding: 3rem;
+  padding: 2rem 3rem;
 
 }
 
@@ -80,6 +78,10 @@ nav ul {
   justify-content: space-around;
   padding: 0.75rem;
   list-style-type: none;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .products, .business-info {
@@ -130,4 +132,65 @@ footer {
   color: white;
   margin-top: 4rem;
   padding: 5rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+
+  .box {
+    width: 47%;
+  }
+  .box.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .background {
+    height: 15rem;
+  }
+
+  .headline {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 10rem;
+  }
+
+  .headline h4 {
+    font-size: 0.77rem;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+  }
+
+  .products,
+  .business-info {
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: 90%;
+    margin: auto;
+  }
+
+  .box.watch {
+    display: none;
+  }
+
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+  footer p {
+    text-align: center;
+  }
 }
