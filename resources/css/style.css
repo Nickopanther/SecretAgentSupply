@@ -1,0 +1,133 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.4em;
+  margin: 0px;
+}
+
+.company {
+  background-color: black;
+  color: white;
+}
+
+.contaianer {
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+.company .container {
+  display: flex;
+  align-items: center;
+  padding: 12px 0px 12px 0.5em;
+}
+
+.company img {
+  height: 1.5em;
+  padding-right: 15px;
+}
+
+.background {
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+/* Have the entire text in all caps with the class
+    .text in it */
+.text {
+  text-transform: uppercase;
+}
+
+/* Headline in the black box over the background */
+.headline {
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold;
+  width: 20rem;
+  position: relative;
+  top: 9rem;
+  left: 9rem;
+  padding: 3rem;
+
+}
+
+.headline h4 {
+  font-size: 1rem;
+}
+
+.headline h1 {
+  font-size: 2rem;
+  line-height: 1.35em;
+  margin: 0.25em 0px;
+}
+
+/* Navigation */
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.75rem;
+  list-style-type: none;
+}
+
+.products, .business-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0px 0px 0px;
+}
+
+.box {
+  width: 30%;
+}
+
+.image {
+  border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 9rem;
+}
+
+.image img {
+  max-width: 9rem;
+}
+
+.productname {
+  display: block;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 0.5rem;
+  display: block;
+}
+
+.info {
+  width: 35%;
+}
+
+.info .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1em 2em;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  margin-top: 4rem;
+  padding: 5rem;
+}
